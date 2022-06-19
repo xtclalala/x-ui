@@ -9,4 +9,5 @@ export default {
 <template>
   <h1>111111</h1>
   <x-button />
+  <t-button />
 </template>

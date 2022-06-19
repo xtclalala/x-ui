@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
     "target": "esnext",
     "useDefineForClassFields": true,
     "module": "esnext",

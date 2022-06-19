@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import * as path from 'path'
-
+import vueJsx from '@vitejs/plugin-vue-jsx';
 import Delete from 'rollup-plugin-delete'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [vue(), vueJsx()],
   build:{
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
