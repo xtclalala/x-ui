@@ -1,0 +1,39 @@
+{
+  "name": "x-ui",
+  "private": false,
+  "description": "A Vue3 UI Library",
+  "version": "22.6.19",
+  "main": "dist/x-ui.umd.js",
+  "module": "dist/x-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/x-ui.es.js",
+      "require": "./dist/x-ui.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "lodash-es": "^4.17.21",
+    "typescript": "^4.7.4",
+    "vite": "^2.9.12",
+    "vitepress": "1.0.0-alpha.2",
+    "vue-tsc": "^0.34.17"
+  }
+}
