@@ -7,7 +7,15 @@ export default {
 </script>
 
 <template>
-  <h1>111111</h1>
-  <x-button />
-  <t-button />
+  <q-dialog>
+    <template #header>
+      header
+    </template>
+    <template #action>
+      <button>queren</button>
+      <button>shanchu</button>
+      <button>chongzhi</button>
+    </template>
+    ceshi
+  </q-dialog>
 </template>
